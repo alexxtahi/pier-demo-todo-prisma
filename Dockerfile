@@ -7,6 +7,10 @@ LABEL framework=express
 
 WORKDIR /app
 
+# Prisma's query/schema engine needs a real libssl on Alpine, or it fails to
+# start with a non-JSON "Error loading shared library libssl.so" response.
+RUN apk add --no-cache openssl
+
 ENV PORT=8080
 ENV APP_NAME="Todo Prisma"
 
