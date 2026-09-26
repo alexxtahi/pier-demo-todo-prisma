@@ -29,3 +29,4 @@ Le déploiement des logs de build doit montrer `prisma migrate deploy` créer
 la table `Todo` sans intervention manuelle.
 
 Build check: Pierrr Fleet build test on 2026-09-26.
+Fleet test 2: build on the rodin node.
