@@ -1,7 +1,7 @@
 # Framework: express (recognised) — repo Dockerfile WINS over the Pier template.
 # Env detection reads .env.example (PORT, APP_NAME); DATABASE_URL comes from
 # the project's managed Postgres mount, not the vault.
-FROM node:20-alpine
+FROM node:22-alpine
 
 LABEL framework=express
 
